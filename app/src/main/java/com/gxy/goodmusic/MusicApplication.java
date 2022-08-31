@@ -15,6 +15,8 @@ import com.permissionx.guolindev.callback.ForwardToSettingsCallback;
 import com.permissionx.guolindev.request.ExplainScope;
 import com.permissionx.guolindev.request.ForwardScope;
 
+import org.litepal.LitePal;
+
 import java.util.List;
 import java.util.logging.Handler;
 
@@ -52,6 +54,8 @@ public class MusicApplication extends BasicApplication {
         activityManager = new ActivityManager();
         context = getApplicationContext();
         musicApplication = this;
+        // 初始化
+        LitePal.initialize(this);
     }
 
     public static ActivityManager getActivityManger() {

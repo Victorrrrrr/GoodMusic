@@ -1,12 +1,14 @@
 package com.gxy.goodmusic.bean;
 
+import org.litepal.crud.LitePalSupport;
+
 /**
  * @ProjectName : GoodMusic
  * @Author : Victor Scott
  * @Time : 2022/8/27 23:10
  * @Description : 歌曲bean
  */
-public class Song {
+public class Song extends LitePalSupport {
 
     public String singer;
 
